@@ -7152,10 +7152,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .table-borderless thead th {
   border-color: transparent;
-  border: none; }
+  border: none !important; }
 
 .table-borderless td, .table-borderless th {
-  border: none; }
+  border: none !important; }
   .table-borderless td a, .table-borderless th a {
     transition: all 0.3s; }
     .table-borderless td a:hover, .table-borderless td a:focus, .table-borderless th a:hover, .table-borderless th a:focus {
