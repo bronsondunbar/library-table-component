@@ -4,14 +4,14 @@ import DOMPurify from 'dompurify'
 
 import './style.css'
 
-const TableComponent = ({ TableHeaderData, TableContentData, TableTheme, TableBorder, TableStriped, TableHover }) => {
+const TableComponent = ({ tableHeaderData, tableContentData, tableTheme, tableBorder, tableStriped, tableHover }) => {
 
   let tableClass = classNames ({
     table: true,
-    'table-dark': TableTheme == 'dark',
-    'table-borderless': TableBorder == false,
-    'table-striped': TableStriped == true,
-    'table-hover': TableHover == true
+    'table-dark': tableTheme == 'dark',
+    'table-borderless': tableBorder == false,
+    'table-striped': tableStriped == true,
+    'table-hover': tableHover == true
   })
 
   return (
@@ -19,7 +19,7 @@ const TableComponent = ({ TableHeaderData, TableContentData, TableTheme, TableBo
       <table className={tableClass}>
         <thead>
           <tr>
-            {TableHeaderData.map((data, index) => {
+            {tableHeaderData.map((data, index) => {
               return (
                 <th
                   key={index}
@@ -31,7 +31,7 @@ const TableComponent = ({ TableHeaderData, TableContentData, TableTheme, TableBo
           </tr>
         </thead>
         <tbody>
-          {TableContentData.map((data, index) => {
+          {tableContentData.map((data, index) => {
             return (
               <tr>
                 {data.content.map((data, index) => {

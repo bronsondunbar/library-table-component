@@ -1,6 +1,6 @@
 {
   "name": "library-table-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Table component for React",
   "main": "./lib/Table.js",
   "license": "MIT",
